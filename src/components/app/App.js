@@ -19,7 +19,7 @@ const App = () => {
                 <main>
                     <Suspense fallback={<Spinner/>}>
                         <Routes>
-                            <Route exact path="/marvel-react" element={ <MainPage/> } />
+                            <Route exact path="https://vladbashkov.github.io/marvel-react/" element={ <MainPage/> } />
                             <Route exact path="/comics" element={ <ComicsPage/> } />
                             <Route exact path="/comics/:id" element={ <SinglePage Component={SingleComicLayout} dataType='comic' />} />
                             <Route exact path="/characters/:id" element={ <SinglePage Component={SingleCharacterLayout} dataType='character' />} />
